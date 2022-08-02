@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import "./normolize";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #A4BFD4;
+    padding-top: 100px;
+}
+
+.container{
+    width: 400px;
+    margin: 0 auto;
+    &__top{
+        background-color: #6A97D9;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            color: white;
+            font-size: 14px;
+            position: relative;
+            margin-left: 15px;
+            &::before{
+                content: "";
+                background-color: white;
+                width: 5px;
+                height: 5px;
+                display: block;
+                border-radius: 50%;
+                position: absolute;
+                left: -15px;
+                top: 6px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+        }
+        span{
+            i{
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+    &__main{
+        background-color: #fff;
+        padding: 20px;
+        &--top{
+            text-align: center;
+            margin-bottom: 20px;
+            span{
+                font-size: 14px;
+                color: #dadada;
+                position: relative;
+                &::before{
+                    content: "";
+                    display: block;
+                    background-color: #dadada;
+                    width: 150px;
+                    height: 1px;
+                    position: absolute;
+                    top: 7px;
+                }
+                &::after{
+                    content: "";
+                    display: block;
+                    background-color: #dadada;
+                    width: 150px;
+                    height: 1px;
+                    position: absolute;
+                    top: 7px;
+                    right: -155px;
+                }
+            }
+        }
+        &--massage{
+            margin-bottom: 20px;
+           &--time{
+               font-size: 14px;
+               color: #a1a1a1;
+               margin-bottom: 5px;
+           } 
+           &--item{
+               width: 80%;
+               background-color: #E7EDF6;
+               padding: 15px;
+               border-radius: 5px;
+               -webkit-border-radius: 5px;
+               -moz-border-radius: 5px;
+               -ms-border-radius: 5px;
+               -o-border-radius: 5px;
+            }
+            &--short{
+                display: inline-block;
+                background-color: #E7EDF6;
+                padding: 15px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+            }
+        }
+        &--left{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-bottom: 15px;
+            &--time{
+                font-size: 14px;
+                color: #a1a1a1;
+                margin-bottom: 5px;
+            }
+            &--item{
+                background-color: #F2F2F2;
+                width: 80%;
+                padding: 15px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+            }
+            &--short{
+                background: #FFC3C2;
+                padding: 15px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+            }
+        }
+        &--send{
+            border-top: 1px solid #dadada;
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            input{
+                border: none;
+                outline: none;
+                width: 80%;
+            }
+            button{
+                border: none;
+                background-color: transparent;
+                color: #769BDA;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// #B5CADC
